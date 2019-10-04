@@ -10,6 +10,4 @@ FixNamespaceComments: true
 IndentWidth: 8
 KeepEmptyLinesAtTheStartOfBlocks: false
 UseTab: ForIndentation
-AccessModifierOffset: -8
-FixNamespaceComments: true
 ...
