@@ -1,0 +1,6 @@
+#ifndef CONF_EXTINT_H
+#define CONF_EXTINT_H
+
+#define EXTINT_CLOCK_SOURCE GCLK_GENERATOR_0
+
+#endif /* CONF_EXTINT_H */

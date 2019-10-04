@@ -1,0 +1,15 @@
+---
+AccessModifierOffset: -8
+AllowShortFunctionsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Linux
+ColumnLimit: 0
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+FixNamespaceComments: true
+IndentWidth: 8
+KeepEmptyLinesAtTheStartOfBlocks: false
+UseTab: ForIndentation
+AccessModifierOffset: -8
+FixNamespaceComments: true
+...
