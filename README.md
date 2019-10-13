@@ -2,18 +2,9 @@
 
 ## Requirements
 
-- cmake/ninja
 - `arm-none-eabi-*` toolchain available through $PATH variable
 
 ## Build
-
-### Build with ninja
-
-```bash
-mkdir build && cd build
-cmake -GNinja -DCMAKE_TOOLCHAIN_FILE=arm-none-eabi.cmake ..
-ninja uf2
-```
 
 ### Build with make
 

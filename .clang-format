@@ -1,6 +1,6 @@
 ---
 AccessModifierOffset: -8
-AllowShortFunctionsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
 BinPackArguments: false
 BinPackParameters: false
 BreakBeforeBraces: Linux

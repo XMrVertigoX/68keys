@@ -47,7 +47,7 @@ int main()
 			matrix_scan();
 		}
 
-		delay_ms(3);
+		delay_ms(2);
 
 		// sleepmgr_enter_sleep();
 	}
