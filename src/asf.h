@@ -13,5 +13,7 @@
 #include <tcc.h>
 #include <tcc_callback.h>
 #include <udc.h>
+#include <udd.h>
+#include <usb.h>
 
 #endif // ASF_H

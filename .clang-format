@@ -1,6 +1,6 @@
 ---
 AccessModifierOffset: -8
-AllowShortFunctionsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
 BinPackArguments: false
 BinPackParameters: false
 BreakBeforeBraces: Linux
@@ -10,6 +10,4 @@ FixNamespaceComments: true
 IndentWidth: 8
 KeepEmptyLinesAtTheStartOfBlocks: false
 UseTab: ForIndentation
-AccessModifierOffset: -8
-FixNamespaceComments: true
 ...
