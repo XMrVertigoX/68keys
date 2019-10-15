@@ -2,9 +2,9 @@
 
 struct tcc_module tcc_backlight_instance;
 
-static void configure_leds(void)
+static void configure_leds()
 {
-	struct port_config config;
+	struct port_config config = {};
 
 	port_get_config_defaults(&config);
 	config.direction = PORT_PIN_DIR_OUTPUT;
@@ -15,9 +15,9 @@ static void configure_leds(void)
 	port_pin_set_output_level(CONF_BOARD_LED_RX_PIN, true);
 }
 
-static void configure_button(void)
+static void configure_button()
 {
-	struct port_config config;
+	struct port_config config = {};
 
 	port_get_config_defaults(&config);
 	config.direction = PORT_PIN_DIR_INPUT;
@@ -26,9 +26,9 @@ static void configure_button(void)
 	port_pin_set_config(CONF_BOARD_BUTTON_PIN, &config);
 }
 
-static void configure_drive_port_pins(void)
+static void configure_drive_port_pins()
 {
-	struct port_config config;
+	struct port_config config = {};
 
 	port_get_config_defaults(&config);
 	config.direction = PORT_PIN_DIR_OUTPUT;
@@ -43,9 +43,9 @@ static void configure_drive_port_pins(void)
 	port_pin_set_config(CONF_BOARD_MATRIX_DRIVE_7_PIN, &config);
 }
 
-static void configure_sense_port_pins(void)
+static void configure_sense_port_pins()
 {
-	struct port_config port_config;
+	struct port_config port_config = {};
 
 	port_get_config_defaults(&port_config);
 	port_config.direction = PORT_PIN_DIR_INPUT;
@@ -72,9 +72,9 @@ static void configure_sense_port_pins(void)
 	port_pin_set_output_level(CONF_BOARD_MATRIX_SENSE_8_PIN, true);
 }
 
-static void configure_backlight_pin(void)
+static void configure_backlight_pin()
 {
-	struct port_config port_config;
+	struct port_config port_config = {};
 
 	port_get_config_defaults(&port_config);
 	port_config.direction = PORT_PIN_DIR_OUTPUT;
@@ -82,9 +82,9 @@ static void configure_backlight_pin(void)
 	port_pin_set_output_level(CONF_BOARD_BACKLIGHT_PIN, false);
 }
 
-static void configure_backlight_tcc(void)
+static void configure_backlight_tcc()
 {
-	struct tcc_config tcc_config;
+	struct tcc_config tcc_config = {};
 
 	tcc_get_config_defaults(&tcc_config, TCC1);
 	tcc_config.counter.period = 100;
@@ -98,7 +98,7 @@ static void configure_backlight_tcc(void)
 	tcc_enable(&tcc_backlight_instance);
 }
 
-void system_board_init(void)
+extern "C" void system_board_init()
 {
 	// Inputs
 	configure_button();
