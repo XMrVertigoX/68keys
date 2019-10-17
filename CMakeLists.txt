@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
+include(arm-none-eabi.cmake)
+
 project(mf68)
 
 set(CPU_OPTIONS -mthumb -mcpu=cortex-m0)

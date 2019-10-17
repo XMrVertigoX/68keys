@@ -9,9 +9,10 @@
 ### Build with make
 
 ```bash
-mkdir build && cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=arm-none-eabi.cmake ..
-make uf2
+mkdir build
+cd build
+cmake ..
+make
 ```
 
 ## Install binary
